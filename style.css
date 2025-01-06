@@ -1,0 +1,160 @@
+
+@font-face {
+    font-family: 'retro';
+    src: url(fonts/title.ttf);
+}
+@font-face {
+    font-family: 'head';
+    src: url(fonts/head.TTF);
+}
+body {
+    margin: 0;
+    font-family: 'retro';
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background: url(img/background.jpg) no-repeat center center fixed;
+    overflow: auto;
+    position:auto;
+    padding-top: 30px;   
+    padding-bottom: 60px;
+    
+}
+
+.no-scroll{
+    position: fixed;
+    width: 100%;
+}
+
+
+
+h5 {
+    text-align: center;
+    font-size: 400%;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'head';
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'retro';
+}
+h2{
+    text-align: center;
+    font-size: 300%;
+    margin: 0;
+    padding-top: 50px;
+    font-family: 'retro';
+    text-decoration: underline;
+    padding-bottom: 40px;
+
+}
+h6{
+    text-align: center;
+    font-size: 250%;
+    margin: 0;
+    padding-top: 50px;
+    font-family: 'head';
+}
+
+p {
+    
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 5%;
+    
+
+}
+
+img {
+    height: 80%;
+    width: 100%;
+}
+
+.categ {
+    border-color: black;
+    border-style: groove;
+}
+
+.overlay {
+    
+    display: flex; /* Use flexbox to center content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    background: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    z-index: 1000; /* Ensure overlay is on top of other content */
+    overflow: hidden; /* Hide any overflow from content */
+ 
+    
+}
+.close-button {
+    position: absolute; /* Position the button absolutely inside the overlay */
+    top:3px; /* Distance from the top edge */
+    right: 10px; /* Distance from the right edge */
+    padding: 10px;
+    border: none;
+    background-color: transparent; /* Transparent background */
+    color: black;
+    font-family: 'retro';
+    font-size: 50px; /* Larger font size for the 'X' */
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50%; /* Round the button */
+    width: 40px; /* Set width for circular button */
+    height: 40px; /* Set height for circular button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1010; /* Ensure it's above other elements */
+}
+
+#flipbook{
+    width: 100%;
+    height: 100%;
+    display:block;
+    position:fixed;
+    overflow: hidden;
+}
+
+.flipbook .turn-page{
+    transition:transform 0.6 ease-out;
+
+}
+
+.turn-page {
+background: url("img/background.jpg");
+height: 100%;
+width: 100%;
+position: fixed;
+overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
